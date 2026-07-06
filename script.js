@@ -1,11 +1,8 @@
 const addMoviemodal = document.getElementById("add-modal")
-// const addMoviemodal=document.querySelector("#add-modal")
-// const addMoviemodal=document.body.children[1]
-// console.log(addMoviemodal);
+
 
 const startAddMovie = document.querySelector("header button")
-// const startAddMovie=document.querySelector("header").lastElementChild
-// console.log(startAddMovie);
+
 
 const backdrop = document.getElementById("backdrop");
 
@@ -137,7 +134,6 @@ const deleteMovieHandler = (movieId) => {
     movies.splice(movieIndex, 1);
     const listRoot = document.getElementById("movie-list")
     listRoot.children[movieIndex].remove();
-    //  listRoot.removeChild(listRoot.children[movieIndex])
     closeMovieDeletionModal()
     uiUpdate()
 
